@@ -11,6 +11,6 @@ end
 
 require 'rubygems'
 require 'redcarpet'
-STDOUT.write(Redcarpet.new(ARGF.read, :smart, :hard_wrap, :safelink,
+STDOUT.write(Redcarpet.new(ARGF.read, :safelink,
   :autolink, :tables, :strikethrough, :no_intraemphasis,
   :fenced_code).to_html)
